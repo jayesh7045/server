@@ -1,12 +1,12 @@
-import express from "express"
-import dotenv from "dotenv"
+import express from "express";
+import dotenv from "dotenv";
 dotenv.config();
 
 const app = express();
-const port = process.env.PORT
-app.listen(port, ()=>{
-    console.log("App is listening on ", port)
-})
-app.get("/", (req, res)=>{
-    res.send("Hello")
-})
+
+app.get("/", (req, res) => {
+    res.send("Hello from Vercel!");
+});
+
+// Instead of app.listen(), export the app for Vercel
+export default app;
