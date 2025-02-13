@@ -22,10 +22,10 @@ app.get("/json", (req, res) => {
   });
 
   let connection = null
-  export async function get_connection(){
-      if(connection === null)
-          connection = await connectDB(URL)
-      return connection 
-  }
-//   get_connection();
+export async function get_connection(){
+    if(connection === null)
+        connection = await connectDB(URL)
+    return connection 
+}
+get_connection();
 export default app;
