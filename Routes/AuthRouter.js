@@ -12,6 +12,6 @@ router.post("/contact_us", SubmitContactData)
 router.post("/signup", signupValidate, signupUser)
 router.get('/get_details', userValidate, getUserDetails)
 router.get('/get_programs', userValidate, getProgramsData)
-rputer.get("/test", TestFunction)
+router.get("/test", TestFunction)
 router.post('/upload', storeData);
 router.get('/get_file', getPocFile);
