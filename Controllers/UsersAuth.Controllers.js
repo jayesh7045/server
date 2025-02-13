@@ -2,6 +2,10 @@ import { validate_users, users } from "../Models/user.model.js";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 
+
+export const TestFunction=(req, res)=>{
+   res.send("This is a test function")
+}
 export const getUserDetails = async (req, res) => {
   try {
       const userId = req.user._id;  // Directly get the user ID from req.user
