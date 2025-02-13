@@ -14,6 +14,9 @@ app.use(bodyParser.json());
 app.get("/", (req, res) => {
   res.send("This is the Home Page");
 });
+app.get("/json", (req, res) => {
+    res.send("This is the JSON Page");
+  });
 
 // ✅ Export the app for Vercel's serverless functions
 export default app;
