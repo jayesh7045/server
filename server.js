@@ -27,5 +27,5 @@ app.get("/json", (req, res) => {
           connection = await connectDB(URL)
       return connection 
   }
-  get_connection();
+//   get_connection();
 export default app;
