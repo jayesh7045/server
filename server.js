@@ -18,5 +18,5 @@ app.get("/json", (req, res) => {
     res.send("This is the JSON Page");
   });
 
-// ✅ Export the app for Vercel's serverless functions
+
 export default app;
