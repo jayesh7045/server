@@ -3,7 +3,7 @@ import dotenv from "dotenv"
 
 import bodyParser from "body-parser";
 import cors from "cors"
-import { router } from "./Routes/AuthRouter.js";
+
 dotenv.config()
 
 app.use(express.json())
