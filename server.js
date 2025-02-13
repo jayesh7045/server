@@ -1,12 +1,20 @@
-import express from "express";
-import dotenv from "dotenv";
-dotenv.config();
+import express from "express"
+import dotenv from "dotenv"
 
-const app = express();
+import bodyParser from "body-parser";
+import cors from "cors"
+import { router } from "./Routes/AuthRouter.js";
+dotenv.config()
 
-app.get("/", (req, res) => {
-    res.send("Hello from Vercel!");
-});
+app.use(express.json())
+app.use(cors())
+app.use(bodyParser.json())
 
-// Instead of app.listen(), export the app for Vercel
-export default app;
+app.get('/', (req, res)=>{
+    res.send("This is the Home Page")
+})
+
+
+
+
+
